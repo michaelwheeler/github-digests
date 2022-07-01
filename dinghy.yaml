@@ -1,0 +1,16 @@
+digests:
+  - digest: index.html
+    title: Open edX
+    since: 1 week
+    items:
+      - https://github.com/edx/commerce-coordinator/pulls
+      - https://github.com/openedx/xblock-lti-consumer/pulls
+      - https://github.com/openedx/docs.openedx.org/pulls
+      - title: Tutor PRs
+        search: org:overhangio is:pr
+
+defaults:
+  ignore_users:
+    - codecov
+    - edx-requirements-bot
+    - openedx-webhooks
