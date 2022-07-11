@@ -6,6 +6,7 @@ digests:
       - https://github.com/edx/commerce-coordinator/pulls
       - https://github.com/openedx/xblock-lti-consumer/pulls
       - https://github.com/openedx/docs.openedx.org/pulls
+      - https://github.com/openedx/edx-developer-docs/pulls
       - title: Tutor PRs
         search: org:overhangio is:pr
 

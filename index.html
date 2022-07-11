@@ -324,6 +324,16 @@ This PR adds user authentication and authorization to the Order History commerce
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/edx/commerce-coordinator/pull/41"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Added ADR-5 for API decoupling proxies and other updates</b> #41</a>
+              [inventhouse]
+
+              
+              </p><p>Description:
+
+Added ADR-5 describing our decision to use a proxy pattern for decoupling legacy ecommerce APIs
+Added...</p></li>
           </ul>
       
     </li>
@@ -446,6 +456,34 @@ Modified the Lti1p3ApiAuthentication authentication backend. Set up in request A
               </li>
           <li class="">
 
+              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>chore: add patch release 3.4.7 note from nutmeg branch</b> #264</a>
+              [ormsbee]
+
+              
+              </p><p>No code change, just making sure master&#39;s change log has 3.4.7 notes in it (this was backported from 4.2.2)</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264#issuecomment-1179102881" title="07-08 15:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>codecov</b>: Codecov Report
+
+Merging #264 (0fb1782) into master (f1ab1d1) will not change coverage.
+The diff...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264#issuecomment-1179581099" title="07-09 17:50">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: @MichaelRoytman: May I trouble you to take a quick look?</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
               <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>[BB-5559] Decouple LTI 1.3 from LTI Consumer XBlock functionality</b> #254</a>
               [tecoholic]
 
@@ -493,7 +531,7 @@ You&#39;ll also need to update the URLs on...</a></p>
                         <ul class="thread_comment"><li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906796962" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: Can the lti_config JSONField contain more items than returned in _lti_1p3_config_as_dict?...</a></p>
                       
@@ -525,13 +563,23 @@ You&#39;ll also need to update the URLs on...</a></p>
 Every time the...</a></p>
                       
                     </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r917837260" title="07-11 11:44">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Agrendalath</b>: @tecoholic,
+
+If someone manually changes values in lti_config attribute via the admin, and it...</a></p>
+                      
+                    </li>
                   </ul>
                       
                     </li>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906797818" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: It feels like the logic for updating the LTI Configuration should be placed in api.py, not...</a></p>
                       
@@ -549,7 +597,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906798236" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: Why do we want a runtime import here?</a></p>
                       
@@ -567,7 +615,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906798249" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: Why do we want a runtime import here?</a></p>
                       
@@ -593,7 +641,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906799238" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: Why do we want a runtime import here?</a></p>
                       
@@ -611,7 +659,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906800061" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: Let&#39;s extract this regexp to a variable.</a></p>
                       
@@ -629,7 +677,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906802238" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: When can we get the ValueError? Could we add a test for this?</a></p>
                       
@@ -647,7 +695,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906802525" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: We probably want to log lti_config_id too.</a></p>
                       
@@ -683,7 +731,7 @@ Every time the...</a></p>
                   <li class="old">
                       <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r906805705" title="06-26 12:18">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>Agrendalath</b>: All other invocations of _save_lti_1p3_config_to_db are gated with the self.lti_version ==...</a></p>
                       
@@ -733,6 +781,53 @@ Merging #254 (c7a8545) into master (f1ab1d1) will decrease coverage by...</a></p
                           <span class="octicon comment" title="comment"></span>
                         
                         <b>tecoholic</b>: @Zacharis278 Hi! Looks like #260 is a very similar to this. 👀 You are right, @giovannicimolin is...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r917821946" title="07-11 11:44">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>Agrendalath</b>: Do we also need to set config_type to &#39;external&#39;? I see that _get_lti_config is checking this,...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#pullrequestreview-1034224710" title="07-11 12:07">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>Agrendalath</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r917851074" title="07-11 12:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Agrendalath</b>: Suggested change
+        
+          
+    
+
+        
+      
+    
+    
+      
+          
+         ...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/254#discussion_r917853759" title="07-11 12:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Agrendalath</b>: Shouldn&#39;t we check both options (for backward compatibility)?</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
@@ -970,34 +1065,6 @@ Merging #260 (e445b34) into master (f1ab1d1) will decrease coverage by...</a></p
                           <span class="octicon comment" title="comment"></span>
                         
                         <b>Zacharis278</b>: The the ultimate goal here is to launch 1.3 tools that don&#39;t have any xblock context. Those...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>chore: add patch release 3.4.7 note from nutmeg branch</b> #264</a>
-              [ormsbee]
-
-              
-              </p><p>No code change, just making sure master&#39;s change log has 3.4.7 notes in it (this was backported from 4.2.2)</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264#issuecomment-1179102881" title="07-08 15:16">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>codecov</b>: Codecov Report
-
-Merging #264 (0fb1782) into master (f1ab1d1) will not change coverage.
-The diff...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/264#issuecomment-1179581099" title="07-09 17:50">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: @MichaelRoytman: May I trouble you to take a quick look?</a></p>
                       
                     </li>
                   </ul>
@@ -1445,49 +1512,19 @@ This comment was...</a></p>
       
     </li>
   <li>
-      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-07-04T07%3A07%3A16&amp;type=issues">Tutor PRs</a></span>
+      <p><span class="reponame"><a href="https://github.com/openedx/edx-developer-docs">openedx/edx-developer-docs</a></span>
+      repo pull_requests
+      </p>
+      
+        <p>Nothing happening</p>
+      
+    </li>
+  <li>
+      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-07-04T14%3A55%3A05&amp;type=issues">Tutor PRs</a></span>
       search pull requests
       </p>
       
         <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-ecommerce/pull/27"><span class="octicons" title="closed pull request, newly closed"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>upgrade to  tutor.plugin.v1 and add parameter for custom theme repo url</b> #27</a>
-              [lpm0073]
-
-              
-              </p><p>This PR includes the following:
-
-re-scaffolded the repository using cookiecutter-tutor-plugin in order to safely...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-ecommerce/pull/27#issuecomment-1173534928" title="07-04 08:46">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: Sorry about the delayed feedback @lpm0073. This PR was tackling too much stuff at once. If some...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/686"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>feat: Make it possible to customize k8s resources</b> #686</a>
-              [foadlind]
-
-              
-              </p><p>Currently there is no way for plugins to customize Kubernetes resources
-defined in Tutor deployment manifests.
-This...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/686#issuecomment-1173541872" title="07-04 08:53">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: Unfortunately I&#39;m not willing to maintain releases older than the current one. If you need Tutor...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="">
 
               <p><a href="https://github.com/overhangio/tutor/pull/699"><span class="octicons" title="merged pull request, newly merged"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: replica set error from pymongo 3.10 -&gt; 3.12 upgrade</b> #699</a>
@@ -1544,24 +1581,6 @@ This caused the...</p><ul class="comments">
               </p><p>Description
 This PR adds new patches to the LMS, CMS, LMS worker, and CMS worker deployments to controll resource...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/677#issuecomment-1173561757" title="07-04 09:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: I&#39;m not sure that the new patches that you introduce in this PR are necessary? Can you please...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/677#issuecomment-1173650173" title="07-04 10:30">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>gabor-boros</b>: @regis
-
-I&#39;m not sure that the new patches that you introduce in this PR are necessary? Can you...</a></p>
-                      
-                    </li>
-                  <li>
                       <p><a href="https://github.com/overhangio/tutor/pull/677#issuecomment-1173912135" title="07-04 14:57">
                         
                           <span class="octicon comment" title="comment"></span>
@@ -1607,31 +1626,6 @@ I did &#34;Runs on Tutor&#34;, but can change it.</p><ul class="comments">
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-indigo/pull/33"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>There is already an &lt;h1&gt; on the pages</b> #33</a>
-              [misilot]
-
-              
-              </p><p>There is already an &lt;h1&gt; in the template being rendered. There should only be one &lt;h1&gt; on a webpage with &lt;h1...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-indigo/pull/33#issuecomment-1177689244" title="07-07 14:18">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: Can you share before/after screenshots of the affected pages?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-indigo/pull/33#issuecomment-1177743693" title="07-07 14:56">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>misilot</b>: Sure, I can try and get those! It looks like some css changes will probably required to make it...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
               <p><a href="https://github.com/overhangio/tutor/pull/669"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: de-dupe mounts before rendering to docker-compose.tmp.yml (v13.2.3)</b> #669</a>
               [kdmccormick]
 
@@ -1650,20 +1644,12 @@ process_mount_points is called more than once in the same...</p><ul class="comme
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor/pull/700"><span class="octicons" title="merged pull request, newly created, newly merged"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: build openedx-dev image when host user is root</b> #700</a>
+              <p><a href="https://github.com/overhangio/tutor/pull/700"><span class="octicons" title="merged pull request, newly merged"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: build openedx-dev image when host user is root</b> #700</a>
               [regisb]
 
               
               </p><p>Sometimes, the host user is root: this may happen when tutor is run with
 &#34;sudo&#34; (which is not recommended) or on...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/700#issuecomment-1173532171" title="07-04 08:43">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: This is ready for review @overhangio/tutor-maintainers.</a></p>
-                      
-                    </li>
                   <li>
                       <p><a href="https://github.com/overhangio/tutor/pull/700#pullrequestreview-1032317700" title="07-08 01:44">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
@@ -1774,13 +1760,71 @@ openedx/edx-platform#30716</p><ul class="comments">
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-indigo/pull/33"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>There is already an &lt;h1&gt; on the pages</b> #33</a>
+              [misilot]
+
+              
+              </p><p>There is already an &lt;h1&gt; in the template being rendered. There should only be one &lt;h1&gt; on a webpage with &lt;h1...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-indigo/pull/33#issuecomment-1177689244" title="07-07 14:18">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Can you share before/after screenshots of the affected pages?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-indigo/pull/33#issuecomment-1177743693" title="07-07 14:56">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>misilot</b>: Sure, I can try and get those! It looks like some css changes will probably required to make it...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-indigo/pull/33#issuecomment-1180120787" title="07-11 08:37">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Sure, I understand the benefit. And it&#39;s probably ok if there are some visual changes. I&#39;d just...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/56"><span class="octicons" title="merged pull request, newly created, newly merged"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Remove wrapping quotes from env settings</b> #56</a>
+              [jcohen28]
+
+              
+              </p><p>Prior versions of docker-compose had a bug that did not properly escape quotation marks in env_files, incorrectly...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/56#pullrequestreview-1034393379" title="07-11 14:01">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b></a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/56#pullrequestreview-1034395794" title="07-11 14:02">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b>: Makes sense.  Good catch.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2022-07-11 07:07 by
+  created at 2022-07-11 14:55 by
   <a href="https://pypi.org/project/dinghy/0.12.0">
     dinghy
     <span class="dinghy_version">0.12.0</span></a>.
