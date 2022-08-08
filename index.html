@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Open edX - Activity since 2022-07-30</title>
+  <title>Open edX - Activity since 2022-08-01</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -180,7 +180,7 @@
   </style>
 <body>
 
-<h1>Open edX - Activity since 2022-07-30</h1>
+<h1>Open edX - Activity since 2022-08-01</h1>
 
 <ul class="repos">
   <li>
@@ -441,6 +441,14 @@ Do we...</a></p>
                           <span class="octicon comment" title="comment"></span>
                         
                         <b>dianekaplan</b>: Thanks Phil! Interesting idea to override what&#39;s in OPEN_EDX_FILTERS_CONFIG. My intent here was...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/43#discussion_r939668104" title="08-07 13:27">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: As-is is good. We may need to do @override_settings (the second test) once we deprecate...</a></p>
                       
                     </li>
                   </ul>
@@ -979,197 +987,6 @@ with the latest version of pip.</p><ul class="comments">
                     </li>
                   </ul>
               </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/openedx-learning/pull/13"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Another pass at basic content models</b> #13</a>
-              [ormsbee]
-
-              
-              </p><p>This splits Item-related models into a new app and otherwise follows the logical split discussed here.</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#pullrequestreview-1060850324" title="08-03 19:22">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>kdmccormick</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937027560" title="08-03 19:22">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: for some instance of this, say ItemVersionData -&gt; Data:
-
-is Data immutable?
-is...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937088306" title="08-03 20:09">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: is Data immutable
-
-It should be or Bad Things will happen.
-
-is ItemVersionData:Data an M:1...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937094068" title="08-03 20:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: @ormsbee
-
-It should be or Bad Things will happen.
-
-Cool, I assumed so but wanted to be sure. Is...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937034472" title="08-03 19:22">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: maybe we should split it up into two fields instead of doing substring searches?
-
-Sounds like a...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937089564" title="08-03 20:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: I guess I&#39;m just used to thinking them as a combined thing because I can&#39;t really see querying...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937049231" title="08-03 19:22">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: So, I&#39;m reading that:
-
-each ItemVersion can only be associated with at most one of each type of...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937190389" title="08-03 22:33">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: Yeah, that was my intent. A couple of extra notes about it:
-Content survives after apps die.
-At...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937971269" title="08-04 15:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: ItemVersion mapping to just one row in a &#34;Data&#34; model is common, but not required.
-
-How would...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#pullrequestreview-1061000229" title="08-03 21:25">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>feanil</b>: A couple of questions but nothing blocking this from landing.  The re-organization generally...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937131047" title="08-03 21:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: Just to confirm, I would see this as something that would be useful for debugging and analyzing...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937190891" title="08-03 22:34">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: Yeah, that was my thought as well.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937132860" title="08-03 21:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: I think maybe this is a low level enough thing that we don&#39;t need to do that.  I&#39;m thinking...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937193223" title="08-03 22:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: Yeah, I think you&#39;re right that it belongs in a higher level. In any case, I&#39;m definitely fine...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937141768" title="08-03 21:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: So an item can only be in one LearningContext(LC), but since an ItemVersion can be in any number...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937196192" title="08-03 22:45">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: I like being paranoid about the data model in general, but I&#39;m not sure what we can do with...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937149065" title="08-03 21:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: When would we need to do a partial search? Is it just when looking at types and ignoring...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937193462" title="08-03 22:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ormsbee</b>: Yeah, that&#39;s the only situation I can really think of.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
           <li class="closed">
 
               <p><a href="https://github.com/openedx/openedx-learning/issues/4"><span class="octicons" title="closed issue, newly closed"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon closed issue"></span></span><b>Create a course loader command for testing purposes</b> #4</a>
@@ -1320,11 +1137,229 @@ In terms of renaming Segment to...</a></p>
                     </li>
                   </ul>
               </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/openedx-learning/pull/13"><span class="octicons" title="merged pull request, newly merged"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Another pass at basic content models</b> #13</a>
+              [ormsbee]
+
+              
+              </p><p>This splits Item-related models into a new app and otherwise follows the logical split discussed here.</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#pullrequestreview-1060850324" title="08-03 19:22">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>kdmccormick</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937027560" title="08-03 19:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: for some instance of this, say ItemVersionData -&gt; Data:
+
+is Data immutable?
+is...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937088306" title="08-03 20:09">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: is Data immutable
+
+It should be or Bad Things will happen.
+
+is ItemVersionData:Data an M:1...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937094068" title="08-03 20:17">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: @ormsbee
+
+It should be or Bad Things will happen.
+
+Cool, I assumed so but wanted to be sure. Is...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r939675871" title="08-07 14:21">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: Cool, I assumed so but wanted to be sure. Is there a way to indicate that, like marking it...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937034472" title="08-03 19:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: maybe we should split it up into two fields instead of doing substring searches?
+
+Sounds like a...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937089564" title="08-03 20:11">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: I guess I&#39;m just used to thinking them as a combined thing because I can&#39;t really see querying...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937049231" title="08-03 19:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: So, I&#39;m reading that:
+
+each ItemVersion can only be associated with at most one of each type of...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937190389" title="08-03 22:33">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: Yeah, that was my intent. A couple of extra notes about it:
+Content survives after apps die.
+At...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937971269" title="08-04 15:55">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: ItemVersion mapping to just one row in a &#34;Data&#34; model is common, but not required.
+
+How would...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r939675787" title="08-07 14:20">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: I guess I thought it would be like:
+ItemVersion &lt;-- (N:1) -- ItemVersionProblemBlock -- (N:N)...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#pullrequestreview-1061000229" title="08-03 21:25">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>feanil</b>: A couple of questions but nothing blocking this from landing.  The re-organization generally...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937131047" title="08-03 21:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: Just to confirm, I would see this as something that would be useful for debugging and analyzing...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937190891" title="08-03 22:34">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: Yeah, that was my thought as well.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937132860" title="08-03 21:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: I think maybe this is a low level enough thing that we don&#39;t need to do that.  I&#39;m thinking...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937193223" title="08-03 22:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: Yeah, I think you&#39;re right that it belongs in a higher level. In any case, I&#39;m definitely fine...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937141768" title="08-03 21:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: So an item can only be in one LearningContext(LC), but since an ItemVersion can be in any number...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937196192" title="08-03 22:45">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: I like being paranoid about the data model in general, but I&#39;m not sure what we can do with...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937149065" title="08-03 21:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: When would we need to do a partial search? Is it just when looking at types and ignoring...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/openedx-learning/pull/13#discussion_r937193462" title="08-03 22:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ormsbee</b>: Yeah, that&#39;s the only situation I can really think of.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/openedx-learning/pull/19"><span class="octicons" title="pull request, newly created"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Remove dependencies, add import-linting</b> #19</a>
+              [ormsbee]
+
+              
+              </p><p>I&#39;ve combined two commits into one PR because they both update dependencies:
+feat: add import linting
+
+import-linter...</p></li>
           </ul>
       
     </li>
   <li>
-      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-07-30T23%3A19%3A24&amp;type=issues">Tutor PRs</a></span>
+      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-08-01T07%3A07%3A29&amp;type=issues">Tutor PRs</a></span>
       search pull requests
       </p>
       
@@ -1344,31 +1379,6 @@ You can see the line from the...</p></li>
 
               
               </p><p>For getting video upload with presigned url&#39;s to work (the old boto based code in...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-minio/pull/19#issuecomment-1200364656" title="07-31 07:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: Hi @insad,
-This looks very promising. Personally I I had tried to enable video uploads a long...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-minio/pull/19#issuecomment-1200367641" title="07-31 07:33">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>insad</b>: I will post later polished plugin settings and instructions how to configure at least apache2...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-minio/pull/19#issuecomment-1200483548" title="07-31 19:18">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>insad</b>: @regisb @BbrSofiane  I just posted step-by-step instructions on the forum to get video upload...</a></p>
-                      
-                    </li>
                   <li>
                       <p><a href="https://github.com/overhangio/tutor-minio/pull/19#issuecomment-1201897589" title="08-02 01:00">
                         
@@ -1408,7 +1418,7 @@ This looks very promising. Personally I I had tried to enable video uploads a lo
   </ul>
 
 <p class="footer">
-  created at 2022-08-06 23:19 by
+  created at 2022-08-08 07:07 by
   <a href="https://pypi.org/project/dinghy/0.13.1">
     dinghy
     <span class="dinghy_version">0.13.1</span></a>.
