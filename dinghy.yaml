@@ -3,7 +3,7 @@ digests:
     title: Open edX
     since: 1 week
     items:
-      - https://github.com/edx/commerce-coordinator/pulls
+      - https://github.com/edx/commerce-coordinator
       - https://github.com/openedx/xblock-lti-consumer/pulls
       - https://github.com/openedx/docs.openedx.org/pulls
       - https://github.com/openedx/edx-developer-docs/pulls
