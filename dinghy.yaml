@@ -3,8 +3,6 @@ digests:
     title: Open edX
     since: 1 week
     items:
-      - https://github.com/orgs/openedx/projects/4
-      - https://github.com/orgs/openedx/projects/8
       - https://github.com/edx/commerce-coordinator
       - https://github.com/openedx/xblock-lti-consumer/pulls
       - https://github.com/openedx/docs.openedx.org/pulls
