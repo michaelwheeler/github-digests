@@ -3,7 +3,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Open edX
    — 
-  Activity since 2022-10-24</title>
+  Activity since 2022-10-31</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -185,7 +185,7 @@
 
 <h1>Open edX
    — 
-  Activity since 2022-10-24</h1>
+  Activity since 2022-10-31</h1>
 
 <ul class="repos">
   <li>
@@ -196,17 +196,140 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/edx/commerce-coordinator/pull/56"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>-t flag added in pull translation command</b> #56</a>
-              [zubairshakoorarbisoft]
+              <p><a href="https://github.com/edx/commerce-coordinator/pull/57"><span class="octicons" title="newly created; draft pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>[WIP] Updates for Docker Provisioning, As well as first attempt at Titan su…</b> #57</a>
+              [grmartin]
 
               
-              </p><p>The transifex command line tool we use to pull translations introduced a fix that broke the existing translation...</p><ul class="comments">
+              </p><p>Updates for Docker Provisioning, As well as first attempt at Titan support.
+
+provision-commerce-coordinator.sh now...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/56#pullrequestreview-1157621854" title="10-27 05:34">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#pullrequestreview-1162295335" title="10-31 18:16">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>UsamaSadiq</b></a></p>
+                        <b>pshiu</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009698045" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: Just a note that Open edX tends to use reStructuredText instead of Markdown due to OEP-19.
+I was...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009727225" title="10-31 18:19">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: woo. thanks. i dont know if this is general or specific to this line, but in this case i was...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009707528" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: Interesting! Why do we need this default?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009727979" title="10-31 18:20">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: so the database and memcache arent in the titan or devstack networks but the application server...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009709022" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: A comment might be useful here describing what this script does &amp; why it&#39;s needed.
+I wasn&#39;t sure...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009732122" title="10-31 18:24">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: depends_on cant reach in to other docker compose files unless they are included by file... and...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009717975" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: I think the default setup is to have the clone of the devstack repository be a sibling directory...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009732607" title="10-31 18:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: i was grouping by github org, heh... seemed more rational, will fix.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009718093" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: Doesn&#39;t the +x substitute DEVSTACK_WORKSPACE with x if it&#39;s not there? May want to be careful...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009735361" title="10-31 18:28">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: i am aware, but it is pointing to the path correctly... as for +x i think shellcheck made me...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009723634" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: I&#39;m a little worried because edX developers are used to the idea that dev.down is not...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009726195" title="10-31 18:18">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>grmartin</b>: ok, np.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009724216" title="10-31 18:16">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>pshiu</b>: Yes! Very dangerous. Highly agree.</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
@@ -222,154 +345,304 @@
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/280"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix github url strings (org edx -&gt; openedx)</b> #280</a>
-              [sarina]
-
-              
-              </p><p>This PR was autogenerated
-This pr replaces the old GitHub organization, github.com/edx, with the new GitHub...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/280#issuecomment-1291430542" title="10-26 02:58">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>sarina</b>: Hey Michelle, this doesn&#39;t need Giovanni&#39;s review. He has asked me to do
-something and I haven&#39;t...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/280#issuecomment-1291432621" title="10-26 03:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>mphilbrick211</b>: Sorry about that!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/281"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: add ADR for decoupling LTI 1.3 launches from the XBlock</b> #281</a>
+              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/281"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Add ADR for decoupling LTI launches from the XBlock</b> #281</a>
               [MichaelRoytman]
 
               
-              </p><p>This commit adds an ADR describing our strategy for decoupling LTI 1.3 launches from the XBlock and from the edX platform.</p><ul class="comments">
+              </p><p>This commit adds an ADR describing our strategy for decoupling LTI launches from the XBlock and from the edX platform.</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/281#issuecomment-1291427333" title="10-26 02:53">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/281#pullrequestreview-1162546534" title="10-31 20:54">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
                         
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>mphilbrick211</b>: Hi @Zacharis278! Looks like this is ready to merge!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/281#issuecomment-1292073892" title="10-26 13:44">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: @mphilbrick211 It&#39;s not ready to merge. I have a few changes I need to include. I&#39;ll get those...</a></p>
+                        <b>Zacharis278</b>: 👍</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/275"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>[MST-1473] Proctoring Service Launch Implementation</b> #275</a>
+              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Proctoring Service Implementation In-Browser Proctoring Launch</b> #297</a>
               [MichaelRoytman]
 
               
-              </p><p>Description
-This pull request implements the LTI Proctoring Services standard LTI messages and proctoring flow. It...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/275#issuecomment-1291429629" title="10-26 02:57">
+              </p><p>Description:
+This pull request introduces support for the LTI 1.3 Proctoring Services specification. It includes...</p><ul class="comments">
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1155451863" title="10-25 21:02">
                         
-                          <span class="octicon comment" title="comment"></span>
+                            <span class="octicon eye" title="reviewed"></span>
+                          
                         
-                        <b>mphilbrick211</b>: @MichaelRoytman just checking in on this - are you planning to proceed with this PR? If so, you...</a></p>
+                        <b>MichaelRoytman</b></a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/275#issuecomment-1292286159" title="10-26 16:14">
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004957130" title="10-25 21:02">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>MichaelRoytman</b>: @mphilbrick211 Thanks for following up. I do not plan to merge this pull request. I&#39;ll close it...</a></p>
+                        <b>MichaelRoytman</b>: Now that lti_consumer could be an instance of LtiAdvantageConsumer or LtiProctoringConsumer,...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1010679120" title="11-01 17:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>giovannicimolin</b>: Yup, @ashultz0 suggestions seems simpler.
+Also, with these complications arising, I&#39;d be in...</a></p>
                       
                     </li>
                   </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/294"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>API gets config from launch data via config_id</b> #294</a>
-              [ashultz0]
-
-              
-              </p><p>Includes an improvement to anonymous loading because we&#39;re going to be using block load all the time for configs...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/294#issuecomment-1289151733" title="10-24 14:46">
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004957787" title="10-25 21:02">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>ashultz0</b>: I repeated my 1.3 launch test and as expected when the LTI configuration is set to CONFIG_IN_DB...</a></p>
+                        <b>MichaelRoytman</b>: TODO: Check in with DE to see whether I&#39;m going to muck up the events.</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/294#issuecomment-1289157312" title="10-24 14:50">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1013240270" title="11-03 17:58">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>ashultz0</b>: @giovannicimolin I got through my LTI testing as config_on_db to validate that it does what I...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/294#pullrequestreview-1153540159" title="10-24 17:45">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>Zacharis278</b>: Hurray for making this just a bit more simple to understand</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/294#pullrequestreview-1157065925" title="10-26 18:16">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>giovannicimolin</b>: 👍
-
- I tested this:
-
-
-Using LTI 1.3 launches for the IMS reference tool as well as to H5P....</a></p>
+                        <b>MichaelRoytman</b>: Got it. I&#39;ll undo this change and log a ticket to address this event name.</a></p>
                       
                     </li>
                   </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/296"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: add override for the LMS_BASE_URL in various LTI settings</b> #296</a>
-              [ashultz0]
-
-              
-              </p><p>... without messing up the rest of your world by changing the LMS base URL for everyone. Meant for ngrok testing of LTI 1.3.</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/296#pullrequestreview-1157036955" title="10-26 18:00">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004960907" title="10-25 21:02">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: I think we&#39;re intended to interface through the consumer instead of accessing these fields...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1010546615" title="11-01 15:10">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Zacharis278</b>: no strong opinions here but if we need to build the consumer anyway below I suppose it would be...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006030838" title="10-26 18:15">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>giovannicimolin</b>: 👍
-
- I tested this NA
- I read through the code
- I checked for accessibility issues NA
- Includes...</a></p>
+                        <b>ashultz0</b>: this will probably end up being 6.1.0 since my PR is likely to get merged ahead. Also the date...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012235137" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: I must have had a stroke here. I&#39;ll update it!</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006117210" title="10-26 19:42">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>ashultz0</b>: this means it&#39;s ok to have document_target = None or &#39;&#39;?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012247073" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: document_target is an optional attribute of the launch_presentation claim. If an application...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1158349881" title="10-27 14:25">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>varshamenon4</b>: Looks great overall! Just some questions and comments. I really appreciate how you document...</a></p>
+                      
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006924610" title="10-27 14:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>varshamenon4</b>: Nice! In general, I really like how descriptive, yet concise your variable/method names are.</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012235424" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: Thank you!</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006937165" title="10-27 14:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>varshamenon4</b>: Question: so does the url show the value (i.e. attempt number)?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012251653" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: The string that looks like a URL here is just the standard name for this claim as specified in...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006938373" title="10-27 14:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>varshamenon4</b>: Question: Pretty basic, but could you clarify what the LTI launch message is for?</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012256351" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: Sure!
+When you do an LTI launch (proctoring or otherwise), the platform directs the browser to...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/296#pullrequestreview-1157100392" title="10-26 18:38">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1009758378" title="10-31 18:55">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>Zacharis278</b></a></p>
+                        <b>Zacharis278</b>: nit: I think you mean to put the key proctoring_launch_data here right?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1009832132" title="10-31 20:16">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>Zacharis278</b>: looks like this param is missing from the docstring</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1010520272" title="11-01 14:49">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>Zacharis278</b>: this sounds like something we can revisit once we start to look at integration with name...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1012258043" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: Sure thing. I was using TODOs as little breadcrumbs of things I knew we didn&#39;t need to do now...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1010670375" title="11-01 16:59">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>giovannicimolin</b>: @MichaelRoytman These lines mean that if lti_1p3_proctoring_enabled is true, then none of the...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1010672894" title="11-01 17:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>giovannicimolin</b>: I have one idea in mind: instead of using inheritance in the LtiConsumer, we could use...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1013237757" title="11-03 17:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: I like that idea. I&#39;ll log a Github issue for it. I&#39;ll also add the comment here, as you recommended.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1163710885" title="11-01 17:13">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>giovannicimolin</b>: @MichaelRoytman I don&#39;t have access to IMS&#39;s certification suite, so I&#39;ll leave the testing to...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#issuecomment-1298874591" title="11-01 17:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Zacharis278</b>: @giovannicimolin I&#39;m liking the suggestion not to have multiple child classes of LtiConsumer. I...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#issuecomment-1298921877" title="11-01 18:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Zacharis278</b>: Overall comment after reviewing both this and edx/edx-exams#32. This looks great, is the next...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1165921852" title="11-03 17:58">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>MichaelRoytman</b>: Just leaving some responses to feedback...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1167436487" title="11-03 17:58">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>MichaelRoytman</b>: Just leaving some responses to feedback...</a></p>
                       
                     </li>
                   </ul>
@@ -382,339 +655,28 @@ Using LTI 1.3 launches for the IMS reference tool as well as to H5P....</a></p>
               <span class="label" style="--label-r:107;--label-g:54;--label-b:15;--label-h:25;--label-s:75;--label-l:23;">blended</span>
                 
               </p><p>Description
-The rebind_noauth_module_to_user function is deprecated[1] in the core edx-platform. This is now...</p><ul class="comments">
-                  <li class="boring">
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/249#pullrequestreview-1149505739" title="10-20 15:48">
-                        <span class="octicon filediff" title="reviewed, changes requested"></span>
-                          
-                        
-                        <b>Agrendalath</b></a></p>
-                      
-                        <ul class="thread_comment"><li class="boring">
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/249#discussion_r1000817551" title="10-20 15:48">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Agrendalath</b>: @xitij2000, did you test the whole PR? Because this should break - we have decided not to...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/249#discussion_r1004182926" title="10-25 08:44">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Agrendalath</b>: @xitij2000, I now see that it wasn&#39;t clear from the ticket&#39;s description. Please do.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
+The rebind_noauth_module_to_user function is deprecated[1] in the core edx-platform. This is now...</p></li>
           <li class="">
 
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Proctoring Service Implementation In-Browser Proctoring Launch</b> #297</a>
-              [MichaelRoytman]
+              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/300"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>docs: emphasize that for dev the xblock must be installed in two containers</b> #300</a>
+              [ashultz0]
 
               
-              </p><p>Description:
-This pull request introduces support for the LTI 1.3 Proctoring Services specification. It includes...</p><ul class="comments">
+              </p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1155451863" title="10-25 21:02">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/300#pullrequestreview-1168945697" title="11-04 17:33">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>MichaelRoytman</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004937665" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: user_id used to be an attribute that the application would use to send over whatever user...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006873410" title="10-27 13:27">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: @MichaelRoytman So to clarify, the user_id that you&#39;ve removed and the one you&#39;ve added are...</a></p>
+                        <b>MichaelRoytman</b>: Thank you for improving the documentation!</a></p>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006877593" title="10-27 13:31">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Actually, I think your comment below answers my question!
-
-See my comment about user_id in...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004940998" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: The return_url is optional, but may want to support it for proctoring, so I have added it here....</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004948854" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: See my comment about user_id in data.py. I need the actual user database identifier, so I had to...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006080252" title="10-26 19:00">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ashultz0</b>: maybe internal_user_id or lms_user_id to emphasize that this. is not the user_id to use most of...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004954249" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: Unfortunately, I can&#39;t give more useful information for debugging purposes, because all relevant...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004957130" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: Now that lti_consumer could be an instance of LtiAdvantageConsumer or LtiProctoringConsumer,...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006083930" title="10-26 19:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ashultz0</b>: could we just switch the order so that it doesn&#39;t try to dl unless it&#39;s that message type? and...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004957787" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: TODO: Check in with DE to see whether I&#39;m going to muck up the events.</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1005869993" title="10-26 15:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Zacharis278</b>: actually we own this and the reason to have xblock here is to differentiate xblock launches from...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004958740" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: I&#39;ll remove this later - wanted it written down, because it differs from some of the other...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006945276" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Nice call!</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004960907" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: I think we&#39;re intended to interface through the consumer instead of accessing these fields...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1004947246" title="10-25 21:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>MichaelRoytman</b>: In my original stab at this, I ensured that the various claims that the Proctoring Tool is...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006078535" title="10-26 18:58">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ashultz0</b>: maybe a separate claim validation method? so you don&#39;t have to mix together &#34;this is a signed...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006875768" title="10-27 13:29">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Good call on validating, @MichaelRoytman! And I like @ashultz0&#39;s idea if I&#39;m understanding correctly.</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1005820500" title="10-26 15:12">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/300#pullrequestreview-1168947952" title="11-04 17:35">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>MichaelRoytman</b>: 10 hours is a little dramatic. However, I want to be sure that this data lives long enough that...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006087148" title="10-26 19:08">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ashultz0</b>: it&#39;s probably fine. A nice trick for timeouts like this is to write it as 606010 so the 10 hours...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006030838" title="10-26 18:15">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ashultz0</b>: this will probably end up being 6.1.0 since my PR is likely to get merged ahead. Also the date...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006080436" title="10-26 19:00">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ashultz0</b>: this is nice and specific :)</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006940282" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: +1</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006089685" title="10-26 19:10">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ashultz0</b>: codecov is right, this seems pretty testable and good to test :)</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006103809" title="10-26 19:25">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ashultz0</b>: can collapse to &#34;if not resource_link&#34; since None is falsey</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006117210" title="10-26 19:42">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ashultz0</b>: this means it&#39;s ok to have document_target = None or &#39;&#39;?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006932203" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: I think the first condition (if document_target) should check that document_target is not None right?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006933875" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Oh wait I think I understand what you&#39;re saying @ashultz0. I guess, should there be a check for...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#pullrequestreview-1158349881" title="10-27 14:25">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>varshamenon4</b>: Looks great overall! Just some questions and comments. I really appreciate how you document...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006924610" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Nice! In general, I really like how descriptive, yet concise your variable/method names are.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006927559" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: TIL about @define and field() usage... this is neat!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006937165" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Question: so does the url show the value (i.e. attempt number)?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/297#discussion_r1006938373" title="10-27 14:25">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>varshamenon4</b>: Question: Pretty basic, but could you clarify what the LTI launch message is for?</a></p>
-                      
-                    </li>
-                  </ul>
+                        <b>schenedx</b>: 👍</a></p>
                       
                     </li>
                   </ul>
@@ -730,154 +692,92 @@ See my comment about user_id in...</a></p>
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/openedx/docs.openedx.org/pull/168"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: Add dev instructions for handling failing PR tests</b> #168</a>
-              [sarina]
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/169"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>docs: Add event related documentation</b> #169</a>
+              [bmtcril]
 
               
-              </p><p>RST translation of https://docs.google.com/document/d/129cyHROlSXJRpt8O8TuqQTr6uVi-C7aY_6NgopFnq5k/edit#, which in...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#issuecomment-1290940495" title="10-25 17:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>sarina</b>: @itsjeyd @mphilbrick211 this is a set of instructions for handling failing tests. Could you...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#issuecomment-1291293190" title="10-26 00:52">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>mphilbrick211</b>: @itsjeyd @mphilbrick211 this is a set of instructions for handling failing tests. Could you...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#pullrequestreview-1156500175" title="10-26 13:26">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>Carlos-Muniz</b>: Content looks good, but it needs to be formatted. @mphilbrick211 suggested some changes in the...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#discussion_r1005671399" title="10-26 13:26">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>Carlos-Muniz</b>: Suggested change
-        
-          
-    
+              </p><p>This moves in content from https://edx.readthedocs.io/projects/devdata that is not specific to the research...</p></li>
+          <li class="">
 
-        
-      
-    
-    
-      
-          
-         ...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/177"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: Add more dev guidance to the developer concept docs.</b> #177</a>
+              [feanil]
+
+              
+              </p><p>This information is ported from the index.rst in the edx-developer-docs
+project.  That project is pretty small once...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#pullrequestreview-1156657495" title="10-26 14:47">
+                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/177#pullrequestreview-1165171137" title="11-02 12:42">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>itsjeyd</b>: @sarina This looks good to me too 👍 Thanks for the ping!</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#discussion_r1005778011" title="10-26 14:47">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>itsjeyd</b>: Suggested change
-        
-          
-    
-
-        
-      
-    
-    
-      
-          
-         ...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#issuecomment-1292271304" title="10-26 16:02">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>sarina</b>: @itsjeyd @mphilbrick211 you can now find this document here:...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/168#issuecomment-1293222071" title="10-27 09:08">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>itsjeyd</b>: @sarina Awesome! 🙂</a></p>
+                        <b>ormsbee</b></a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/openedx/docs.openedx.org/pull/169"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Add event related documentation</b> #169</a>
-              [bmtcril]
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/167"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: enable tx detectlang</b> #167</a>
+              [ghassanmas]
 
-              
-              </p><p>This moves in content from https://edx.readthedocs.io/projects/devdata that is not specific to the research...</p><ul class="comments">
+              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
+                
+              </p><p>This fixes part of #126, by just enabling tx to detect language
+ref: https://docs.transifex.com/live/api#language-detection</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/169#pullrequestreview-1159266410" title="10-28 02:12">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>feanil</b>: Content wise this looks great, style wise, The overlines seem like a lot to me and generally we...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/169#discussion_r1007536462" title="10-28 02:12">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: NIT: I don&#39;t think the overlines here serve much of a purpose but fine to leave them if you like...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/169#discussion_r1007537040" title="10-28 02:12">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>feanil</b>: Is there a reason this didn&#39;t start with hashes for the page title?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/169#discussion_r1008399955" title="10-28 19:43">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>bmtcril</b>: Just copied in that way, fixed now</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/169#pullrequestreview-1160667428" title="10-28 20:18">
+                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/167#pullrequestreview-1165323786" title="11-02 14:09">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
                         <b>feanil</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/114"><span class="octicons" title="newly closed; closed pull request"><span class="octicon dash"></span><span class="octicon x"></span><span class="octicon closed pull"></span></span><b>feat: set tcril-oncall to be the owner for dev quickstart</b> #114</a>
+              [ormsbee]
+
+              
+              </p><p>The setup_a_backend_dev_environment.rst file was created during a tCRIL
+hackathon, and we want to make sure to keep...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/114#issuecomment-1302205041" title="11-03 14:32">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: We actually wanted this on the file in edx-platform that we ask the users to change. ...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/179"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>docs: Update the developer home page.</b> #179</a>
+              [feanil]
+
+              
+              </p><p>Change which pages we&#39;re highlighting.
+Update what&#39;s new
+Correct the name of the referencs index page.
+
+Before:...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/179#pullrequestreview-1167623228" title="11-03 20:29">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>Carlos-Muniz</b>: Looks good.
+Why are you making changes from &#34;* Guides&#34; to &#34;More *&#34;?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/docs.openedx.org/pull/179#issuecomment-1303617944" title="11-04 14:13">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>feanil</b>: I switched to &#34;More...&#34; to make it easier to tell that this was not everything and that they...</a></p>
                       
                     </li>
                   </ul>
@@ -893,30 +793,31 @@ See my comment about user_id in...</a></p>
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/openedx/edx-developer-docs/pull/110"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>docs: Add Nutmeg.2 and Nutmeg.3 releases</b> #110</a>
-              [mtyaka]
+              <p><a href="https://github.com/openedx/edx-developer-docs/pull/111"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feanil/redirect content</b> #111</a>
+              [feanil]
 
-              <span class="label" style="--label-r:240;--label-g:240;--label-b:240;--label-h:0;--label-s:0;--label-l:94;">open-source-contribution</span>
-                
-              </p><p>Description: This adds info about Nutmeg.2 and Nutmeg.3 releases.
-JIRA: N/A
-Merge checklist:
-
- All reviewers...</p><ul class="comments">
+              
+              </p><p>docs: Add the redirect extension.
+chore: Run make upgrade.
+fixup! docs: Add the redirect extension.
+docs: Add...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/edx-developer-docs/pull/110#pullrequestreview-1153339159" title="10-24 15:22">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/openedx/edx-developer-docs/pull/111#discussion_r1014236825" title="11-04 16:28">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>nedbat</b></a></p>
+                        <b>jmakowski1123</b>: Worth adding an additional link to the &#34;how to&#34; for contributing?</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/edx-developer-docs/pull/110#issuecomment-1289206924" title="10-24 15:25">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/edx-developer-docs/pull/111#discussion_r1014284348" title="11-04 17:18">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>mtyaka</b>: @nedbat can you help me merge? I don&#39;t have merge rights on this repo.</a></p>
+                        <b>feanil</b>: Done.</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
@@ -933,123 +834,170 @@ Merge checklist:
       
     </li>
   <li>
-      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-10-24T07%3A09%3A13&amp;type=issues">Tutor PRs</a></span>
+      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-10-31T07%3A08%3A35&amp;type=issues">Tutor PRs</a></span>
       search pull requests
       </p>
       
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-webui/pull/5"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: upgrade to olive</b> #5</a>
+              <p><a href="https://github.com/overhangio/tutor/pull/738"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: pluggable `local/dev/k8s do &lt;job&gt;` commands</b> #738</a>
               [regisb]
 
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-webui</span>
-              </p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-indigo/pull/38"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: upgrade to olive</b> #38</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-indigo</span>
-              </p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-android/pull/5"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: upgrade to olive</b> #5</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-android</span>
-              </p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-forum/pull/10"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: support mongodb+srv urls</b> #10</a>
-              [keithgg]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-forum</span>
-              </p><p>Description
-At the moment the plugin does not support some options to deploy when the MongoDB url is of the newer...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#pullrequestreview-1154651262" title="10-25 11:40">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>We introduce a new filter to implement custom commands in arbitrary containers.
+It becomes easy to write convenient...</p><ul class="comments">
+                  <li class="boring">
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#pullrequestreview-1160719494" title="10-28 22:14">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>gabor-boros</b>: @keithgg looks good from my side!</a></p>
+                        <b>kdmccormick</b></a></p>
+                      
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008535221" title="10-28 22:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Hm, in the interest of reducing the total number of extension points plugin authors need to...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1009883966" title="10-31 21:22">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: OK, I thought about this more.
+I was happy to realize that everything in the new initialise...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#pullrequestreview-1162088558" title="10-31 15:47">
+                        <span class="octicon filediff" title="reviewed, changes requested"></span>
+                          
+                        
+                        <b>kdmccormick</b>: I tried this out in a plugin of mine and hit a few issues, but overall I really like the...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1009559013" title="10-31 15:47">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: I found that custom commands cannot be added, because this line is run before plugin modules are...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1009565524" title="10-31 15:47">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: I think supporting --mount would make do much more powerful. For example, if we incorporated...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1009568872" title="10-31 15:47">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: I&#39;m not sure I understand this. Launch/quickstart supports mounting, so why wouldn&#39;t init?</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   </ul>
               </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/734"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>feat: Upgrade to Olive</b> #734</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p></li>
           <li class="">
 
               <p><a href="https://github.com/overhangio/tutor/pull/733"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: strongly typed hooks</b> #733</a>
               [regisb]
 
               &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>Now that the mypy bugs have been resolved, we are able to define more precisely and cleanly the types of Actions and...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/732"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Improve Proxy Tutorial Documentation</b> #732</a>
-              [waza-ari]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>The proxy tutorial documentation provides the necessary basics. It however doesn&#39;t explain which headers need to be...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/675"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: Add config parameters for k8s volume sizes</b> #675</a>
-              [foadlind]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>Today, the storage size for Persistent Volume Claims for services like
-MongoDB and MySQL are hard-coded in Tutor....</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/20"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: add forum with ruby 3</b> #20</a>
-              [ghassanmas]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/openedx-release-demo</span>
-              </p><p>This just adds the forum from its olive PR. Below how I test  this:
-1- while on venv of the tutor olive (and while...</p><ul class="comments">
+              </p><p>Now that the mypy bugs have been resolved, we are able to define more precisely and cleanly the types of Actions and...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/20#pullrequestreview-1156360470" title="10-26 11:51">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/overhangio/tutor/pull/733#pullrequestreview-1163283496" title="11-01 13:14">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>regisb</b></a></p>
+                        <b>kdmccormick</b>: This is great! Here are my thoughts just from looking through the diff.
+I&#39;ll do another pass...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/733#discussion_r1010391867" title="11-01 13:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: I think we should note here as well as in the Tutor developer docs that type checking will now...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/733#discussion_r1010404488" title="11-01 13:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: We could put from __future__ import annotations at the top of this module, which enables...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/733#discussion_r1010409895" title="11-01 13:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: I think using NamedTuples here could really improve the readability of some of these...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/733#discussion_r1010608883" title="11-01 16:05">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>kdmccormick</b>: @regisb I banged my head against this for a while:
+
+With the PR as-is, you can remove Action,...</a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/19"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>build: import test course after deployment</b> #19</a>
-              [kdmccormick]
+              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: add codejail with olive support</b> #21</a>
+              [mariajgrimaldi]
 
               &nbsp;&nbsp; <span class="homerepo">overhangio/openedx-release-demo</span>
-              </p><p>adds the test course from
-https://github.com/openedx/openedx-test-course</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/19#issuecomment-1289284905" title="10-24 16:24">
+              </p><p>Description
+This PR adds tutor-contrib-codejail plugin, so loncapa problems work as expected in the sandbox...</p><ul class="comments">
+                  <li class="boring">
+                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1007807095" title="10-28 08:37">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>regisb</b>: Don&#39;t we have to run tutor local init --limit=codejail prior to local launch, as per the...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1010608001" title="11-01 16:02">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>kdmccormick</b>: I tested this with my local Tutor instance using the Olive branch.</a></p>
+                        <b>mariajgrimaldi</b>: Done :)</a></p>
+                      
+                    </li>
+                  </ul>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/19#issuecomment-1290733401" title="10-25 15:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: @regisb , could you take a look?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/19#pullrequestreview-1156894834" title="10-26 16:24">
+                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#pullrequestreview-1166547967" title="11-03 09:31">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
@@ -1065,279 +1013,30 @@ https://github.com/openedx/openedx-test-course</p><ul class="comments">
 
               &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
               </p><p>Related to  kdmccormick/pull/1
-When building the docker image each MFE was built from the its crossponding...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/73"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix: Remove hardcoded loopback ip in dev docker-compose</b> #73</a>
-              [angonz]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>In the docker compose for development, the loopback IP address is hardcoded to 127.0.0.1. In some dev environments,...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/73#discussion_r1007810154" title="10-28 08:40">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>regisb</b>: Unfortunately, this is not really a great idea because it exposes the app port to everyone....</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/73#pullrequestreview-1159689948" title="10-28 08:40">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>regisb</b></a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-notes/pull/18"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>feat: upgrade to Olive</b> #18</a>
-              [jfavellar90]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-notes</span>
-              </p><ul class="comments">
+When building the docker image each MFE was built from the its crossponding...</p><ul class="comments">
                   <li class="boring">
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#pullrequestreview-1144228622" title="10-17 14:05">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>regisb</b></a></p>
-                      
-                        <ul class="thread_comment"><li class="boring">
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r997107738" title="10-17 14:05">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: Did you try to upgrade to 22.04?</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1003531830" title="10-24 16:42">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>jfavellar90</b>: @regisb changed the Dockerfile to use Ubuntu 22.04.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1007812216" title="10-28 08:43">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: For the record, 3.7 is the current minimally supported version of Python everywhere, until June...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1003630622" title="10-24 18:34">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>mariajgrimaldi</b>: maybe it&#39;d easier for future migrations to use just install_requires=[&#34;tutor&#34;],</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1003694859" title="10-24 19:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>jfavellar90</b>: I think this comes from the change in codejail. This is the way of pinning the version used...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1003632013" title="10-24 18:36">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>mariajgrimaldi</b>: why python3.7? 🤔</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-notes/pull/18#discussion_r1003675538" title="10-24 19:31">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>jfavellar90</b>: Same version as Tutor: overhangio/tutor@a3d7bb0</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: add codejail with olive support</b> #21</a>
-              [mariajgrimaldi]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/openedx-release-demo</span>
-              </p><p>Description
-This PR adds tutor-contrib-codejail plugin, so loncapa problems work as expected in the sandbox...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1005901641" title="10-26 16:23">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#pullrequestreview-1144073610" title="10-17 13:01">
                         <span class="octicon filediff" title="reviewed, changes requested"></span>
                           
                         
-                        <b>regisb</b>: The plugin should then be enabled, line 80.</a></p>
+                        <b>kdmccormick</b>: Thanks for continuing work on this @ghassanmas . I have a few concerns that I think can be...</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1005902635" title="10-26 16:24">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>ghassanmas</b>: Probably need to enable it at line 80?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#issuecomment-1292322485" title="10-26 16:44">
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#discussion_r997030401" title="10-17 13:01">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>mariajgrimaldi</b>: You&#39;re both right! thanks @regisb @ghassanmas</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1007807095" title="10-28 08:37">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>regisb</b>: Don&#39;t we have to run tutor local init --limit=codejail prior to local launch, as per the...</a></p>
+                        <b>kdmccormick</b>: There is duplication here between [&#34;name&#34;] and [&#34;env&#34;][&#34;production&#34;][&#34;APP_ID&#34;]. They must always...</a></p>
                       
                         <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/21#discussion_r1007854719" title="10-28 09:27">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#discussion_r1014036805" title="11-04 13:42">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>regisb</b>: After I manually installed and enabled the plugin I can confirm that init is required.</a></p>
+                        <b>kdmccormick</b>: I like that @ghassanmas , although I think you would need to set APP_ID in the same process as...</a></p>
                       
                     </li>
                   </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/22"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: install and enable notes</b> #22</a>
-              [cmltaWt0]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/openedx-release-demo</span>
-              </p><p>Description
-The PR enables https://github.com/overhangio/tutor-notes/tree/olive plugin.
-Installed and tested...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/22#pullrequestreview-1159679385" title="10-28 08:33">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>regisb</b></a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/openedx-release-demo/pull/22#pullrequestreview-1160198791" title="10-28 14:50">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>jfavellar90</b></a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/738"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: pluggable `local/dev/k8s do &lt;job&gt;` commands</b> #738</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>We introduce a new filter to implement custom commands in arbitrary containers.
-It becomes easy to write convenient...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#issuecomment-1289256304" title="10-24 16:01">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Nice, I&#39;ll review shortly @regisb .</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#pullrequestreview-1160719494" title="10-28 22:14">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>kdmccormick</b></a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008476816" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Now that we can run tutor local do init ..., what do think about deprecating the old syntax...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008500778" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Suggested change
-        
-          
-    
-
-        
-      
-    
-    
-      
-          
-         ...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008505295" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Man, when I tried to implement do-jobs, I struggled so much with the design of this filter....</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008519024" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: 🎉</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008535221" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Hm, in the interest of reducing the total number of extension points plugin authors need to...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/738#discussion_r1008541444" title="10-28 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: Since all the updates we&#39;ve made to the Plugins API, the name and structure of the hooks/...</a></p>
                       
                     </li>
                   </ul>
@@ -1347,18 +1046,51 @@ It becomes easy to write convenient...</p><ul class="comments">
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/74"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix(dev): inherit local webpack.dev.config.js</b> #74</a>
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/75"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>Fix (build): use NPM_REGISTRY from the config</b> #75</a>
               [ARMBouhali]
 
               &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>A small fix for issue #71 to avoid overwriting the local webpack.dev.config.js in MFEs with the plugin&#39;s version of...</p></li>
+              </p><p>TL;DR - Use the NPM_REGISTRY config in Dockerfile, the same way it&#39;s done in other Tutor Dockerfiles...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/74"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>fix(dev): inherit local webpack.dev.config.js</b> #74</a>
+              [ARMBouhali]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>A small fix for issue #71 to avoid overwriting the local webpack.dev.config.js in MFEs with the plugin&#39;s version of...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/74#pullrequestreview-1162320655" title="10-31 18:05">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b>: I didn&#39;t test this change myself but it looks good to me!</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/74#issuecomment-1304558776" title="11-05 14:38">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>ARMBouhali</b>: @arbrandes would you mind having a quick look ?
+Thanks.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/openedx-release-demo/pull/23"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>chore: enable event routing backends plugin on olive demo</b> #23</a>
+              [ziafazal]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/openedx-release-demo</span>
+              </p><p>PR has changes to enable event routing backends plugin on olive demo.</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2022-10-31 07:09 by
+  created at 2022-11-07 07:08 by
   <a href="https://pypi.org/project/dinghy/0.14.0">
     dinghy
     <span class="dinghy_version">0.14.0</span></a>.
