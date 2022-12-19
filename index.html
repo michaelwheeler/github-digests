@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Open edX
    — 
-  Activity since 2022-12-05</title>
+  Activity since 2022-12-12</title>
   <link rel="icon" href="https://raw.githubusercontent.com/primer/octicons/main/icons/comment-discussion-24.svg" type="image/svg+xml">
   <style>
   body {
@@ -202,7 +202,7 @@
 
 <h1>Open edX
    — 
-  Activity since 2022-12-05</h1>
+  Activity since 2022-12-12</h1>
 
 <ul class="repos">
   <li>
@@ -210,126 +210,7 @@
       repo issues, pull requests, and releases
       </p>
       
-        <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/edx/commerce-coordinator/pull/57"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Updates for Docker Provisioning, And first attempt at Titan support</b> #57</a>
-              [grmartin]
-
-              
-              </p><p>Updates for Docker Provisioning, As well as first attempt at Titan support.
-
-provision-commerce-coordinator.sh now...</p><ul class="comments">
-                  <li class="boring">
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#pullrequestreview-1162295335" title="10-31 18:16">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>pshiu</b></a></p>
-                      
-                        <ul class="thread_comment"><li class="boring">
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009709022" title="10-31 18:16">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>pshiu</b>: A comment might be useful here describing what this script does &amp; why it&#39;s needed.
-I wasn&#39;t sure...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1036058998" title="12-06 14:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>pshiu</b>: Ah, gotcha! Thanks for the info on depends_on!
-What do you think about a comment at the top of...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1041065840" title="12-06 14:43">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>grmartin</b>: Sure, but ill do so on Line 2 ;)</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li class="boring">
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009717975" title="10-31 18:16">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>pshiu</b>: I think the default setup is to have the clone of the devstack repository be a sibling directory...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1036060789" title="12-06 14:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>pshiu</b>: Was this fixed?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1041073526" title="12-06 14:49">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>grmartin</b>: Yes, as if [ -z ${DEVSTACK_WORKSPACE+x} ]; then DEVSTACK_WORKSPACE=$(pwd)/..; fi this is correct, right?</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1041075133" title="12-06 14:50">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>pshiu</b>: Wrote the comment before it was fixed - that&#39;s it, thank you!</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li class="boring">
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1009718093" title="10-31 18:16">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>pshiu</b>: Doesn&#39;t the +x substitute DEVSTACK_WORKSPACE with x if it&#39;s not there? May want to be careful...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#discussion_r1041060014" title="12-06 14:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>pshiu</b>: Oh, I see, I was wrong! In this example, DEVSTACK_WORKSPACE is never changed. Also, this may not...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#pullrequestreview-1199457503" title="12-06 14:39">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>pshiu</b>: LGTM but please see comments.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/edx/commerce-coordinator/pull/57#issuecomment-1339618330" title="12-06 16:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>grmartin</b>: @pshiu commitlint is broken, any thoughts?</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          </ul>
+        <p>Nothing happening</p>
       
     </li>
   <li>
@@ -340,35 +221,91 @@ What do you think about a comment at the top of...</a></p>
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/316"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>build: Remove community-engineering CODEOWNERS</b> #316</a>
-              [timmc-edx]
+              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Fix PII Sharing Behavior and Enable PII Sharing in LTI 1.3 Launches and Fix LTI 1.3 Modal Launches</b> #317</a>
+              [MichaelRoytman]
 
               
-              </p><p>Team no longer exists. See edx/edx-arch-experiments#132.</p><ul class="comments">
+              </p><p>Description
+This pull request fixes a few issues and bugs with sharing personally identifiable information (PII) in...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/316#pullrequestreview-1212125631" title="12-09 19:19">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1049873181" title="12-15 16:33">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>dianakhuang</b></a></p>
+                        <b>MichaelRoytman</b>: I&#39;ll follow up on this, but I didn&#39;t want to muck around in the runtimes on such short notice...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1049875989" title="12-15 16:35">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>MichaelRoytman</b>: The caching was not working correctly. It appeared that the cached value was not being...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1050013829" title="12-15 18:39">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Zacharis278</b>: This is only called by studio anyway right? So the performance impact here doesn&#39;t seem all that...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1050065133" title="12-15 19:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: Right now, yes. Once we add the LTI configuration service to the right places, it will be called...</a></p>
                       
                     </li>
                   </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/315"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: adds setting to prevent nrps pii</b> #315</a>
-              [Zacharis278]
-
-              
-              </p><p>MST-1737
-This is a temporary solution. We would like to enable PII in an LTI1.3 launch but turning that flag on...</p><ul class="comments">
+                      
+                    </li>
                   <li>
-                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/315#pullrequestreview-1212066256" title="12-09 18:27">
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1049877386" title="12-15 16:36">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>MichaelRoytman</b>: TODO: this will need some cute styling. It looks like trash but it works.
+I didn&#39;t write this...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1049879189" title="12-15 16:37">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>MichaelRoytman</b>: I don&#39;t know what the purpose of these headers was. Anyone feel strongly I should leave them in?...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1050036626" title="12-15 19:05">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>Zacharis278</b>: I think this is for a11y based on #204</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#discussion_r1050080247" title="12-15 19:57">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>MichaelRoytman</b>: I was wondering if it was an accessibility concern. Thanks for finding that. I&#39;ll add it back in.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/openedx/xblock-lti-consumer/pull/317#pullrequestreview-1219801796" title="12-15 19:10">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
-                        <b>MichaelRoytman</b></a></p>
+                        <b>Zacharis278</b>: ran through the changes and this all looks good to me 👍</a></p>
                       
                     </li>
                   </ul>
@@ -381,7 +318,23 @@ This is a temporary solution. We would like to enable PII in an LTI1.3 launch bu
       repo pull_requests
       </p>
       
-        <p>Nothing happening</p>
+        <ul class="entries">
+          <li class="">
+
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/227"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Build out a skeleton for instructional design content.</b> #227</a>
+              [feanil]
+
+              
+              </p><p>This is educator content but because it&#39;s a well demarked sub-category,
+we put the content in its own subfolder for...</p></li>
+          <li class="">
+
+              <p><a href="https://github.com/openedx/docs.openedx.org/pull/228"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: Point to the new latest release of the platform.</b> #228</a>
+              [feanil]
+
+              
+              </p></li>
+          </ul>
       
     </li>
   <li>
@@ -389,15 +342,7 @@ This is a temporary solution. We would like to enable PII in an LTI1.3 launch bu
       repo pull_requests
       </p>
       
-        <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/openedx/edx-developer-docs/pull/115"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>build: Remove community-engineering CODEOWNERS</b> #115</a>
-              [timmc-edx]
-
-              
-              </p><p>Team no longer exists. See edx/edx-arch-experiments#132.</p></li>
-          </ul>
+        <p>Nothing happening</p>
       
     </li>
   <li>
@@ -405,168 +350,197 @@ This is a temporary solution. We would like to enable PII in an LTI1.3 launch bu
       repo issues, pull requests, and releases
       </p>
       
-        <ul class="entries">
-          <li class="">
-
-              <p><a href="https://github.com/openedx/openedx-learning/pull/27"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: fix pull translations command</b> #27</a>
-              [UsamaSadiq]
-
-              
-              </p><p>Description
-
-Transifex latest version requires -t flag with the tx pull command.</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/27#pullrequestreview-1208225684" title="12-07 11:09">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>iamsobanjaved</b></a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/27#issuecomment-1340940317" title="12-07 13:07">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>e0d</b>: @Carlos-Muniz this feels up your alley.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/27#pullrequestreview-1208463689" title="12-07 13:55">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>ormsbee</b></a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/openedx/openedx-learning/pull/27#pullrequestreview-1208791463" title="12-07 16:56">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>Carlos-Muniz</b>: The -t flag used to be defaulted to true on tx pull, but no longer is as evident of the CLI tool...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          </ul>
+        <p>Nothing happening</p>
       
     </li>
   <li>
-      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-12-05T07%3A07%3A00&amp;type=issues">Tutor PRs</a></span>
+      <p><span class="reponame"><a href="https://github.com/search?q=org%3Aoverhangio+is%3Apr+updated%3A%3E2022-12-12T07%3A06%3A48&amp;type=issues">Tutor PRs</a></span>
       search pull requests
       </p>
       
         <ul class="entries">
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/58"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>perf: re-order Dockerfile stages to significantly optimize build speed</b> #58</a>
-              [kdmccormick]
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/96"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: Don&#39;t rebuild image on `local start`</b> #96</a>
+              [arbrandes]
 
-              <span class="label" style="--label-r:162;--label-g:238;--label-b:239;--label-h:180;--label-s:70;--label-l:78;">enhancement</span>
-                &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>Description
-Previously, build stages were ordered like this in the
-rendered Dockerfile (dependencies in...</p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/724"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>feat: rename quickstart to launch</b> #724</a>
-              [Carlos-Muniz]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>These changes renames all mentions of quickstart to launch
-found in the code and documentation.
-Acceptance...</p><ul class="comments">
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>Since we no longer need the build context to pass in MFE configuration at runtime, by removing it from the tutor...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/724#issuecomment-1252902228" title="12-06 11:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>Carlos-Muniz</b>: @regisb This and associated PRs are ready for review.
-There is one minor thing that I have not...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/724#issuecomment-1339209492" title="12-06 11:56">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: @Carlos-Muniz FYI the new tutor local launch gif will be pushed as part of the olive upgrade: #734</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/16"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: syntax error in plugin.py template</b> #16</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/cookiecutter-tutor-plugin</span>
-              </p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/16#pullrequestreview-1209097336" title="12-07 20:47">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>kdmccormick</b>: Sorry I missed this. Good catch.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/752"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: update problem templates according newer python versions</b> #752</a>
-              [mariajgrimaldi]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p><p>Description
-This PR adds a patch that fixes a syntax error in the Circuit Schematic Builder problem template...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/752#pullrequestreview-1206925149" title="12-06 16:31">
-                        <span class="octicon filediff" title="reviewed, changes requested"></span>
-                          
-                        
-                        <b>regisb</b>: This is definitely the right place for this change! Can you please just add a changelog entry?...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/752#issuecomment-1339673629" title="12-06 16:54">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>mariajgrimaldi</b>: @regisb: thanks! both work for me :s not sure why. I changed it already :) I&#39;ll add the changelog entry</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/752#issuecomment-1339691915" title="12-06 17:06">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: I think you forgot to git add the new changelog entry ;)</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/752#pullrequestreview-1209574786" title="12-08 07:26">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/96#pullrequestreview-1213475215" title="12-12 12:51">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
                         <b>regisb</b></a></p>
                       
                     </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/734"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: Upgrade to Olive</b> #734</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-forum/pull/11"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to olive</b> #11</a>
+              [ghassanmas]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-forum</span>
+              </p><p>This is still work in progress.
+This upgrade to ruby to 3.0.4 based on this openedx/cs_comments_service/pull/392 and...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/overhangio/tutor/pull/752#issuecomment-1342193664" title="12-08 07:26">
+                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#pullrequestreview-1213478475" title="12-12 12:52">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b>: Looking good. Can you please just squash your commits?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#issuecomment-1346462780" title="12-12 13:07">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>regisb</b>: Thanks @mariajgrimaldi!</a></p>
+                        <b>ghassanmas</b>: Its just two unrelated commits, one for upgrade and other docs. Do you prefer them to be...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#issuecomment-1346537677" title="12-12 13:43">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Yes, please combine them into one. The reason is that if we merge both commits at once the...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#pullrequestreview-1213986549" title="12-12 17:16">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b></a></p>
                       
                     </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/69"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>MFE dynamic config</b> #69</a>
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/66"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to Olive</b> #66</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-indigo/pull/38"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to olive</b> #38</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-indigo</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-android/pull/5"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to olive</b> #5</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-android</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-notes/pull/18"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to Olive</b> #18</a>
+              [jfavellar90]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-notes</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-xqueue/pull/13"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to Olive</b> #13</a>
+              [jfavellar90]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-xqueue</span>
+              </p><p>the plugin was updated to work correctly with tutor olive.
+Steps:
+Install tutor from source using the olive...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-xqueue/pull/13#pullrequestreview-1214047944" title="12-12 17:55">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-ecommerce/pull/35"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to olive</b> #35</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-ecommerce</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-discovery/pull/36"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to Olive</b> #36</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-discovery</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-minio/pull/20"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to Olive</b> #20</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-minio</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-webui/pull/5"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: upgrade to olive</b> #5</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-webui</span>
+              </p></li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/757"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: `tutor local upgrade --from=nutmeg`</b> #757</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>There is nothing to do in the upgrade from nutmeg to olive, but it&#39;s not a reason to crash this command.
+Close #756.</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/757#pullrequestreview-1214437707" title="12-12 22:34">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/758"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: &#34;TypeError: Parameters to Generic[...]&#34; error</b> #758</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>People running typing-extensions==3.10 faced this error for just any tutor command:
+$ tutor version
+...
+Traceback...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/758#pullrequestreview-1214474683" title="12-12 23:15">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b>: Looks good to me!</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/69"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>MFE dynamic config</b> #69</a>
               [ghassanmas]
 
               <span class="label" style="--label-r:162;--label-g:238;--label-b:239;--label-h:180;--label-s:70;--label-l:78;">enhancement</span>
@@ -574,170 +548,37 @@ This PR adds a patch that fixes a syntax error in the Circuit Schematic Builder 
                 &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
               </p><p>Related to  kdmccormick/pull/1
 When building the docker image each MFE was built from the its crossponding...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#issuecomment-1338909843" title="12-06 07:39">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: I did not know --rebase-merges existed, and... can&#39;t say I&#39;m really a fan. This is because I&#39;m...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#issuecomment-1341095646" title="12-07 15:03">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Here are the results of my testing.
-tutor local
-I&#39;ve tested this via tutor local in nightly, and...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#issuecomment-1341159135" title="12-07 15:44">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: @arbrandes
-
-Maybe if you can provide more details on your environment? Was it nightly? Did you...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#pullrequestreview-1208723740" title="12-07 16:15">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>kdmccormick</b>: Aha! I found my testing issue. I still had a bunch of MFE_ settings in config.yml back from when...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#issuecomment-1341357212" title="12-07 17:59">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Huge thanks @ghassanmas (and @kdmccormick and @regisb), and congratulations!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#issuecomment-1342662550" title="12-08 12:33">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: This is an amazing achievement, huge kudos to you three.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/87"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: Add support for the Course Authoring MFE</b> #87</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>The only feature enabled by default is the &#34;Pages &amp; Resources&#34; menu item in Studio.
-Waffle flags for the new React...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/87#issuecomment-1341476475" title="12-07 19:21">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: @regisb, rebased on the just-merged dynamic config support.  Want to take a second pass?
-On...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/87#discussion_r1043479643" title="12-08 15:24">
+                  <li class="boring">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#pullrequestreview-1202554169" title="12-02 14:14">
                         <span class="octicon filediff" title="reviewed, changes requested"></span>
                           
                         
-                        <b>regisb</b>: This file should be deleted now that we have dynamic config, right? (same for production file below)</a></p>
+                        <b>kdmccormick</b></a></p>
+                      
+                        <ul class="thread_comment"><li class="boring">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#discussion_r1038180792" title="12-02 14:14">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Why is this needed now if it wasn&#39;t needed before?</a></p>
                       
                         <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/87#discussion_r1043523529" title="12-08 15:58">
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#discussion_r1046838098" title="12-13 09:07">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>arbrandes</b>: Apologies - of course!  This got past me on the rebase. 😬</a></p>
+                        <b>ghassanmas</b>: Yes it can rewrite the headers, I was able to remove that line while changing the caddy patch...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/69#discussion_r1046811701" title="12-13 09:33">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: I&#39;m having a second look at this. I think that the &#34;right&#34; way to do this is not to modify...</a></p>
                       
                     </li>
                   </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/87#pullrequestreview-1210350032" title="12-08 16:07">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>regisb</b></a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/87#issuecomment-1343207057" title="12-08 19:09">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Rebased and retested.  All good!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/92"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>Dynamic config fixes</b> #92</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>This PR includes various fixes related to dynamic configuration:
-
-Fix Tutor filter deprecation warning
-Make sure MFE...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#issuecomment-1342892561" title="12-08 15:20">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: FYI @arbrandes @ghassanmas @kdmccormick. If you test the MFE dynamic configuration you&#39;ll almost...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#pullrequestreview-1210511459" title="12-08 17:47">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>arbrandes</b>: Thanks @regisb!</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#discussion_r1043644279" title="12-08 17:47">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: I meant to ask how the images were going to be built.  +1</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#discussion_r1043645861" title="12-08 17:47">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>arbrandes</b>: The change makes total sense, but I&#39;m curious: did you actually run into a failure without it? ...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#discussion_r1043731058" title="12-08 19:15">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: No I didn&#39;t, but I would have if I had run tutor dev start account... Which I probably already...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/92#discussion_r1043646655" title="12-08 17:47">
-                        
-                          <span class="octicon comment resolved" title="resolved comment"></span>
-                        
-                        <b>arbrandes</b>: Nice catch!</a></p>
                       
                     </li>
                   </ul>
@@ -747,144 +588,296 @@ Make sure MFE...</p><ul class="comments">
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/91"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: Add support for the Discussions MFE</b> #91</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>Adds support for the Discussions MFE, enabling it by default.
-Optional features also enabled via waffle...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/91#issuecomment-1340079467" title="12-06 22:14">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Ok, I&#39;ve tested this in nightly and olive, and it&#39;s looking good AFAICT.  We&#39;re just blocked on...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/91#issuecomment-1341479130" title="12-07 19:24">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Rebased on the new runtime config support: good enough for nightly.  Probably worth another...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/91#pullrequestreview-1210277084" title="12-08 15:25">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>regisb</b>: Awesome!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/91#issuecomment-1344326917" title="12-09 13:44">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: ...aaand, we&#39;re in!</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/93"><span class="octicons" title="newly created; newly closed; draft closed pull request"><span class="octicon star"></span><span class="octicon x"></span><span class="octicon draft closed pull"></span></span><b>[WIP] feat: add authn mfe</b> #93</a>
-              [brian-smith-tcril]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>currently blocked by openedx/frontend-app-authn#692</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/93#issuecomment-1343447431" title="12-08 22:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>brian-smith-tcril</b>: some comments here: 042a5dd</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/93#issuecomment-1344400046" title="12-09 14:51">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Closed in favor of #94.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor/pull/734"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: Upgrade to Olive</b> #734</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
-              </p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/95"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: add missing CSRF configuration</b> #95</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>When introducing dynamic config[1], CSRF_TOKEN_API_PATH was removed from the MFE build environment and not added to...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/95#pullrequestreview-1211766073" title="12-09 14:43">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>regisb</b></a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/95#issuecomment-1344400722" title="12-09 14:51">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Tested with tutor local, fixes all POST problems.</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/89"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: Add support for the ORA Grading MFE</b> #89</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>The MFE is accessible by instructors in ORA exercises that have explicit staff grading steps.
-The corresponding...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/89#issuecomment-1341481779" title="12-07 19:26">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: This has also been rebased, but at a reduced priority since we haven&#39;t gotten the blocking...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: olive updates, more scaffolding, and basic &#39;make test&#39;</b> #17</a>
+              <p><a href="https://github.com/overhangio/tutor/pull/627"><span class="octicons" title="merged pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon merged pull"></span></span><b>feat: introduce &#39;tutor dev quickstart&#39; (also, some extra docs)</b> #627</a>
               [kdmccormick]
 
-              &nbsp;&nbsp; <span class="homerepo">overhangio/cookiecutter-tutor-plugin</span>
-              </p><p>Overview
-This PR updates the cookiecutter to use the latest hooks from Tutor v15 (Olive). It also adds scaffolding...</p><ul class="comments">
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>Description
+Fixes openedx/wg-developer-experience#58
+There are three commits. The first two just add some...</p><ul class="comments">
                   <li>
-                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#issuecomment-1343809652" title="12-09 03:48">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>kdmccormick</b>: @overhangio/tutor-maintainers Here are some improvements to the plugin cookiecutter that are...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1044066327" title="12-09 03:49">
+                      <p><a href="https://github.com/overhangio/tutor/pull/627#discussion_r1046771397" title="12-13 08:02">
                         
                             <span class="octicon eye" title="reviewed"></span>
                           
                         
-                        <b>kdmccormick</b>: Suggested change
+                        <b>regisb</b>: @kdmccormick I&#39;d like to come back to this PR. It seems to me that it&#39;s unnecessary to build the...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/627#discussion_r1047282671" title="12-13 15:06">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: @regisb When I added this, I don&#39;t think I realized that dev start used the compose --build...</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/97"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>olive improvements</b> #97</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>Do not modify ALLOWED_HOSTS in lms settings
+Faster MFEs in development by skipping build step</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/97#pullrequestreview-1215582757" title="12-13 14:26">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b>: No objections!</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/97#issuecomment-1348772091" title="12-13 15:12">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: Thanks for the fixes!</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/762"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: backfill persistent grades during upgrade</b> #762</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>In Olive, persistent grades are now mandatory. This was already the case in Nutmeg, but it didn&#39;t mean that...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/762#pullrequestreview-1215785616" title="12-13 15:55">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>kdmccormick</b>: Thanks for the patch.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/763"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>docs: fix v15.0.0 changelog</b> #763</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>v15.0.0 changelog includes entries from v14.0.0 (!!!). I assume this is because we did not delete these entries from...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/763#pullrequestreview-1215831469" title="12-13 16:11">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>kdmccormick</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/760"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>depr: get rid of `quickstart` command</b> #760</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>We meant to get rid of quickstart in Olive, but somehow we forgot to delete the command.</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/760#issuecomment-1348985900" title="12-13 16:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: I&#39;m going to merge this now because I&#39;d like to release v15.1.0 before the day is over.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor/pull/759"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>olive fixes</b> #759</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor</span>
+              </p><p>Upgrade openedx dev dependencies
+Skip separate openedx-dev building in tutor dev launch.
+Fix authn login in...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/759#issuecomment-1348986741" title="12-13 16:25">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: I&#39;m going to merge this now because I&#39;d like to release v15.1.0 before the day is over.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor/pull/759#discussion_r1048216183" title="12-14 09:31">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>arbrandes</b>: I ran into this issue myself, but later could not reproduce it: I assumed it was because of the...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/100"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: pull dev images from docker.io</b> #100</a>
+              [arbrandes]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>Now that we push development images to docker.io, we also need to use the correct URI to fetch them via docker-compose.</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/100#pullrequestreview-1217249161" title="12-14 11:01">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b>: Niiiiiice</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/100#issuecomment-1351015961" title="12-14 11:17">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: @regisb, I snuck a README change in here, so it goes out with 15.0.2.  Mind taking another peek?</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/100#pullrequestreview-1217275868" title="12-14 11:18">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>regisb</b></a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/98"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: do not build mfe image on `local start`</b> #98</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>Now that the mfe image is pushed to docker.io, there is no longer any need to re-build every time we run tutor local start.</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/98#pullrequestreview-1217431293" title="12-14 13:10">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>kdmccormick</b></a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/98#issuecomment-1351363713" title="12-14 13:35">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Wait, didn&#39;t I already fix this?  How did this disappear from Olive?  I&#39;m pretty sure I was...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/98#pullrequestreview-1217475177" title="12-14 13:38">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b></a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/98#issuecomment-1351385883" title="12-14 13:46">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: You merged into Nightly two days ago, which I believe will feed into Palm&#39;s master but missed...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/98#issuecomment-1352988183" title="12-15 12:26">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>arbrandes</b>: Yeah, I missed the cut.  I mis-remembered having fixed it on Friday, but it&#39;s obviously not the...</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/101"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>more olive fixes</b> #101</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>Caddyfile as runtime config, not build-time
+Fix authn MFE header logo (#99)
+Enable caddy logging
+Modify all dev...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#pullrequestreview-1219398896" title="12-15 15:13">
+                        <span class="octicon filediff" title="reviewed, changes requested"></span>
+                          
+                        
+                        <b>arbrandes</b></a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049760732" title="12-15 15:13">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>arbrandes</b>: We need to update local-docker-compose-dev-services too.</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049823269" title="12-15 15:56">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Good catch. I wrote a function so that I stop forgetting about that image.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049761377" title="12-15 15:13">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>arbrandes</b>: Nice catch!  I was worried this was a much worse problem.</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#issuecomment-1353324333" title="12-15 16:05">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: @arbrandes I snuck another commit to document the use of the mfe &#34;version&#34;.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#pullrequestreview-1219576823" title="12-15 16:37">
+                        <span class="octicon checkcircle" title="reviewed, approved"></span>
+                          
+                        
+                        <b>arbrandes</b>: One optional nit, but good to merge otherwise!  I&#39;ll approve and let you merge at your convenience.</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049873542" title="12-15 16:37">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>arbrandes</b>: Noticed that &#34;env&#34; won&#39;t work anymore, but I can open a separate PR for that.</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049874128" title="12-15 16:37">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>arbrandes</b>: Suggested change
         
           
     
@@ -899,276 +892,160 @@ This PR updates the cookiecutter to use the latest hooks from Tutor v15 (Olive).
                       
                     </li>
                   <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/101#discussion_r1049877588" title="12-15 16:37">
+                        
+                          <span class="octicon comment resolved" title="resolved comment"></span>
+                        
+                        <b>arbrandes</b>: Nice!  I wasn&#39;t even aware there was an easy way to do this!</a></p>
+                      
+                    </li>
+                  </ul>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/tutor-mfe/pull/102"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: yaml.parser.ParserError due to unrendered image name in dev</b> #102</a>
+              [regisb]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
+              </p><p>A user reported the following error on tutor dev start:
+======================================================
+   ...</p><ul class="comments">
+                  <li>
+                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/102#issuecomment-1353507004" title="12-15 18:07">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: @arbrandes FYI I&#39;m going to merge this immediately.</a></p>
+                      
+                    </li>
+                  </ul>
+              </li>
+          <li class="">
+
+              <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17"><span class="octicons" title="newly merged; merged pull request"><span class="octicon dash"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: olive updates, more scaffolding, and basic &#39;make test&#39;</b> #17</a>
+              [kdmccormick]
+
+              &nbsp;&nbsp; <span class="homerepo">overhangio/cookiecutter-tutor-plugin</span>
+              </p><p>Overview
+This PR updates the cookiecutter to use the latest hooks from Tutor v15 (Olive). It also adds scaffolding...</p><ul class="comments">
+                  <li class="boring">
                       <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#pullrequestreview-1211795544" title="12-09 15:10">
                         <span class="octicon filediff" title="reviewed, changes requested"></span>
                           
                         
                         <b>regisb</b>: I think that we should try to keep the plugin that is generated by default pretty lean. I mean,...</a></p>
                       
-                        <ul class="thread_comment"><li>
+                        <ul class="thread_comment"><li class="boring">
                       <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1044541767" title="12-09 15:10">
                         
-                          <span class="octicon comment" title="comment"></span>
+                          <span class="octicon comment resolved" title="resolved comment"></span>
                         
                         <b>regisb</b>: There is no need to wrap the scripts in bash -c &#34;...&#34;.  Scripts are already wrapped in sh -e -c...</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1044542870" title="12-09 15:10">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1047295285" title="12-13 15:16">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>regisb</b>: Great example!</a></p>
+                        <b>kdmccormick</b>: 👍🏻</a></p>
                       
                     </li>
-                  <li>
+                  </ul>
+                      
+                    </li>
+                  <li class="boring">
                       <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1044545937" title="12-09 15:10">
                         
                           <span class="octicon comment" title="comment"></span>
                         
                         <b>regisb</b>: Do we want to leave this uncommented by default? I suspect that most people will not take the...</a></p>
                       
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1044549020" title="12-09 15:10">
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1047308328" title="12-13 15:25">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>regisb</b>: We should probably not have these init tasks in the plugin by default. First it might be...</a></p>
+                        <b>kdmccormick</b>: I suspect that most people will not take the time to delete this command and will end up with a...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1049670676" title="12-15 13:58">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: Let me wander in philosophy territory for a minute... I&#39;m perfectly OK with bugs slipping into...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1050398578" title="12-16 06:03">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>kdmccormick</b>: In my experience, trying to preemptively protect ourselves from all sorts of bugs leads to...</a></p>
+                      
+                    </li>
+                  <li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1050778951" title="12-16 13:49">
+                        
+                          <span class="octicon comment" title="comment"></span>
+                        
+                        <b>regisb</b>: I appreciate your desire to have correct code, and I think your solution is terrific.</a></p>
                       
                     </li>
                   </ul>
                       
                     </li>
                   </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/94"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>feat: add support for the authn MFE</b> #94</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><p>Adds support for the Authn MFE, enabling it by default.
-This disable enterprise login by default.
-Co-authored-by:...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/94#issuecomment-1344470556" title="12-09 15:52">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: @regisb, what do you think?  Shall we?  It seems the issue I was seeing before was a red...</a></p>
                       
                     </li>
                   <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/94#issuecomment-1344474276" title="12-09 15:56">
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1050777616" title="12-16 13:48">
+                        
+                            <span class="octicon eye" title="reviewed"></span>
+                          
+                        
+                        <b>regisb</b>: If you&#39;d like to sed &#34;in-place&#34; you can use the -i option. I believe the following should...</a></p>
+                      
+                        <ul class="thread_comment"><li>
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#discussion_r1050915776" title="12-16 16:04">
                         
                           <span class="octicon comment" title="comment"></span>
                         
-                        <b>regisb</b>: If authn works without edx-enterprise, then let&#39;s go for it! I think we should include it in...</a></p>
+                        <b>kdmccormick</b>: Great trick.</a></p>
                       
                     </li>
                   </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-android/pull/5"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: upgrade to olive</b> #5</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-android</span>
-              </p></li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-forum/pull/14"><span class="octicons" title="newly created; newly merged; merged pull request"><span class="octicon star"></span><span class="octicon check"></span><span class="octicon merged pull"></span></span><b>fix: Use the repo in the openedx org</b> #14</a>
-              [arbrandes]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-forum</span>
-              </p><p>We should use the repo in the openedx org, not the edx one.</p><ul class="comments">
+                      
+                    </li>
                   <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/14#pullrequestreview-1212005406" title="12-09 17:46">
+                      <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/17#pullrequestreview-1220880178" title="12-16 13:49">
                         <span class="octicon checkcircle" title="reviewed, approved"></span>
                           
                         
                         <b>regisb</b></a></p>
                       
                     </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/14#pullrequestreview-1212025044" title="12-09 17:59">
-                        <span class="octicon checkcircle" title="reviewed, approved"></span>
-                          
-                        
-                        <b>ghassanmas</b>: Thanks @arbrandes. It was openedx  on olive and then got edx when I was applying the patches.</a></p>
-                      
-                    </li>
                   </ul>
               </li>
           <li class="">
 
-              <p><a href="https://github.com/overhangio/tutor-forum/pull/10"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: support mongodb+srv urls</b> #10</a>
-              [keithgg]
+              <p><a href="https://github.com/overhangio/cookiecutter-tutor-plugin/pull/18"><span class="octicons" title="newly created; pull request"><span class="octicon star"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>docs: update v0-&gt;v1 migration guide for CLI_DO_INIT_TASKS</b> #18</a>
+              [kdmccormick]
 
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-forum</span>
-              </p><p>Description
-At the moment the plugin does not support some options to deploy when the MongoDB url is of the newer...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1337451482" title="12-05 14:20">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: I see, anyway can this wait for Ruby 3 update openedx/cs_comments_service#392 becuse it&#39;s...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1340424133" title="12-07 06:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>keithgg</b>: I see, anyway can this wait for Ruby 3 update openedx/cs_comments_service#392 becuse it&#39;s...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1340610450" title="12-07 08:59">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: Secondaly, would you consider another path of upgrading the ruby client in cs_commens_service...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1340624548" title="12-07 09:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>keithgg</b>: I meant to say that instead of us trying to change tutor-forum to support different use cases of...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1340640534" title="12-07 09:24">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: @keithgg that would be great, I will try now to ping you on Open edX slack.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1342660315" title="12-08 12:32">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: I meant to say that instead of us trying to change tutor-forum to support different use cases of...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/10#issuecomment-1345526948" title="12-11 11:23">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: @ghassanmas this is an issue that we discussed before (though I&#39;m not sure where). The mongoid...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-forum/pull/11"><span class="octicons" title="pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon pull"></span></span><b>feat: upgrade to olive</b> #11</a>
-              [ghassanmas]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-forum</span>
-              </p><p>This is still work in progress.
-This upgrade to ruby to 3.0.4 based on this openedx/cs_comments_service/pull/392 and...</p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#discussion_r1044629672" title="12-09 16:37">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>regisb</b>: If the olive PR is not merged in time, then we need to decide what to do. I suggest the...</a></p>
-                      
-                        <ul class="thread_comment"><li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#discussion_r1044644394" title="12-09 16:55">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: Definitely, agree, and thanks for the heads up. Applying the changes through immutable hash id...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-forum/pull/11#discussion_r1044672447" title="12-09 17:32">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: It&#39;s done through patches now and I have tested it. So should be safe to redeploy this branch on...</a></p>
-                      
-                    </li>
-                  </ul>
-                      
-                    </li>
-                  </ul>
-              </li>
-          <li class="">
-
-              <p><a href="https://github.com/overhangio/tutor-mfe/pull/66"><span class="octicons" title="draft pull request"><span class="octicon dash"></span><span class="octicon dash"></span><span class="octicon draft pull"></span></span><b>feat: upgrade to Olive</b> #66</a>
-              [regisb]
-
-              &nbsp;&nbsp; <span class="homerepo">overhangio/tutor-mfe</span>
-              </p><ul class="comments">
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#issuecomment-1343212070" title="12-08 19:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Already in there!</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#issuecomment-1343213846" title="12-08 19:11">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: Oh, wait, is this where we track when the olive branch goes into master?  Whoops, reopening.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#issuecomment-1344560805" title="12-09 17:17">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>arbrandes</b>: @regisb, how does one get this onto the demo instance?  The olive branch is up to date with...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#issuecomment-1344591367" title="12-09 17:50">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>regisb</b>: I started a build + launch, it should be ready in a few minutes.</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#discussion_r1044855024" title="12-09 21:27">
-                        
-                            <span class="octicon eye" title="reviewed"></span>
-                          
-                        
-                        <b>regisb</b>: Could you remove this build context? It is still causing a rebuild on every tutor local start,...</a></p>
-                      
-                    </li>
-                  <li>
-                      <p><a href="https://github.com/overhangio/tutor-mfe/pull/66#issuecomment-1345576172" title="12-11 15:09">
-                        
-                          <span class="octicon comment" title="comment"></span>
-                        
-                        <b>ghassanmas</b>: course authroing olive.master branch needs this openedx/frontend-app-course-authoring/pull/389 I...</a></p>
-                      
-                    </li>
-                  </ul>
-              </li>
+              &nbsp;&nbsp; <span class="homerepo">overhangio/cookiecutter-tutor-plugin</span>
+              </p><p>Part of #15
+One more for you @regisb .
+No automatic verification this time 😁</p></li>
           </ul>
       
     </li>
   </ul>
 
 <p class="footer">
-  created at 2022-12-12 07:07 by
+  created at 2022-12-19 07:06 by
   <a href="https://pypi.org/project/dinghy/1.0.0">
     dinghy
     <span class="dinghy_version">1.0.0</span></a>.
