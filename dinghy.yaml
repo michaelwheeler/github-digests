@@ -5,6 +5,8 @@ digests:
     items:
       - https://github.com/eduNEXT/platform-plugin-ecommerce-api
       - https://github.com/edx/commerce-coordinator
+      - https://github.com/openedx/openedx-events
+      - https://github.com/openedx/openedx-filters
       - https://github.com/openedx/xblock-lti-consumer/pulls
       - https://github.com/openedx/docs.openedx.org/pulls
       - https://github.com/openedx/openedx-learning
